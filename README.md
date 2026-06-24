@@ -1,4 +1,4 @@
-# Water+Fabric Platform
+# WaterNFabric Platform
 
 A modern, interactive frontend application built with React and Vite.
 
