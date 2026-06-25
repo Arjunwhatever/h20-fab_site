@@ -58,11 +58,6 @@ export default function Partnerships() {
   return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
-        .partners-head{max-width:72rem;margin:0 auto;padding:0 1.25rem;display:flex;flex-direction:column;align-items:flex-start;gap:.9rem}
-        .partners-head .eyebrow{color:var(--primary);margin:0}
-        .partners-head h2{font-family:"DM Sans",sans-serif;font-weight:500;color:var(--primary);font-size:clamp(1.5rem,3.5vw,2.25rem);letter-spacing:-.02em;line-height:1.1}
-        .partners-head p{font-family:"Roboto Mono",monospace;color:var(--primary);font-size:12px;max-width:34rem;margin:0;line-height:1.6}
-        .partners-intro{padding:6rem 1.25rem 4.5rem;background:var(--bg)}
         .partners-sec{position:relative;overflow:hidden;padding:2.5rem 0;background:#eaf6c4;isolation:isolate;display:flex;align-items:center}
         .partners-sec::before{content:"";position:absolute;inset:0;background-image:url('https://id-preview--e58e46e6-c11b-46e7-8261-a5bb2c0146a8.lovable.app/__l5e/assets-v1/46b5c709-a59e-46b5-acf6-65705f2a71c1/lime-fabric.jpg');background-size:cover;background-position:center;z-index:-2}
         .partners-sec::after{content:"";position:absolute;left:0;right:0;top:0;height:45%;backdrop-filter:blur(8px);background:linear-gradient(180deg,rgba(234,246,196,.4) 0%,rgba(234,246,196,.15) 65%,transparent 100%);z-index:-1;pointer-events:none;mask-image:linear-gradient(180deg,#000 0%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 100%)}
@@ -84,21 +79,21 @@ export default function Partnerships() {
         .p-card:hover .p-logo{transform:translateY(-6px)}
         .p-head{height:32%;display:flex;flex-direction:column;justify-content:flex-start}
         .p-name{font-family:"DM Sans",sans-serif;font-weight:600;color:var(--lime);font-size:20px;line-height:1;letter-spacing:-.01em;margin:0;text-transform:none}
-        .p-divider{height:1px;width:100%;background:color-mix(in oklab,var(--lime) 70%,transparent);margin-top:10px;opacity:.8}
-        .p-sub{font-family:"Roboto Mono",monospace;font-size:10px;line-height:1.4;color:rgba(255,255,255,.85);margin:8px 0 0;letter-spacing:.01em}
+        .p-divider{height:1px;min-height:1px;flex-shrink:0;width:100%;background:color-mix(in oklab,var(--lime) 70%,transparent);margin-top:10px;opacity:.8}
+        .p-sub{font-family:"Roboto Mono",monospace;font-size:12px;line-height:1.5;color:rgba(255,255,255,.85);margin:8px 0 0;letter-spacing:.01em}
         .p-glass{position:relative;margin-top:auto;height:56%;border-radius:20px;background:rgba(255,255,255,.82);backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,.35);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden;transition:background .35s cubic-bezier(.22,1,.36,1)}
         .p-glass::after{content:"";position:absolute;top:0;left:0;right:0;height:40%;background:linear-gradient(180deg,rgba(255,255,255,.55),transparent);pointer-events:none;border-radius:20px 20px 0 0}
         .p-logo{max-width:88%;max-height:90%;object-fit:contain;transition:transform .35s cubic-bezier(.22,1,.36,1);filter:drop-shadow(0 4px 12px rgba(0,0,0,.08))}
         @media(max-width:640px){.p-card{flex:0 0 230px;height:250px;padding:16px;border-radius:24px}.p-name{font-size:18px}.p-glass{border-radius:18px}}
       `}} />
 
-      <section className="partners-intro" aria-label="Strategic Partners">
-        <div className="partners-head">
-          <div>
-            <div className="eyebrow">/ Partnerships</div>
-            <h2>Standards we stand with.</h2>
+      <section className="section" style={{ paddingBottom: '3.5rem' }} aria-label="Strategic Partners">
+        <div className="wrap">
+          <div style={{ marginBottom: '1rem' }}>
+            <div className="eyebrow">// Our alignment</div>
+            <h2 className="h2">Standards we <span className="italic">stand with.</span></h2>
+            <p className="body" style={{ marginTop: '1.5rem', maxWidth: '34rem' }}>Aligned with the institutions, frameworks and certifications writing the rules of regenerative fashion.</p>
           </div>
-          <p>Aligned with the institutions, frameworks and certifications writing the rules of regenerative fashion.</p>
         </div>
       </section>
 

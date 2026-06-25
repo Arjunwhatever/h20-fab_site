@@ -29,7 +29,7 @@ export default function App() {
       </div>
     </div>
     <div className="nav" id="nav">
-      <nav className="nav-inner glass-strong">
+      <nav className="nav-inner">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Platform</a></li>
@@ -104,12 +104,10 @@ export default function App() {
   {/* GARMENT ECOSYSTEM */}
   <section className="section">
     <div className="wrap">
-      <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '1.5rem', marginBottom: '3.5rem', flexWrap: 'wrap'}}>
-        <div>
-          <div className="eyebrow">// The living garment engine</div>
-          <h2 className="h2">The <span className="italic">breathing</span><br />hoodie.</h2>
-        </div>
-        <p className="body" style={{maxWidth: '24rem'}}>Factory Input → SHA-256 Locked DPP → Consumer QR Scan → Wear-Milestone Rewards → One-Scan Resale. The loop never ends.</p>
+      <div style={{ marginBottom: '3.5rem' }}>
+        <div className="eyebrow">// Cradle to resale</div>
+        <h2 className="h2">The <span className="italic">breathing</span><br />hoodie.</h2>
+        <p style={{ fontFamily: '"Roboto Mono", monospace', fontSize: '12px', lineHeight: '1.6', color: 'oklch(0.52 .22 255 /.8)', maxWidth: '42rem', marginTop: '1.5rem' }}>We don't just create compliance documents. We create living product identities that remain active, verified and commercially valuable long after the first sale.</p>
       </div>
       <div className="eco-wrap">
         <div className="eco-glow1" />
@@ -158,53 +156,7 @@ export default function App() {
       </div>
     </div>
   </section>
-  {/* PUBLIC QUIZ */}
-  <section className="section">
-    <div className="wrap">
-      <div style={{marginBottom: '3.5rem'}}>
-        <div className="eyebrow">// For you</div>
-        <h2 className="h2">The public <span className="italic">quiz.</span></h2>
-      </div>
-      <div className="grid cols-2" style={{alignItems: 'stretch'}}>
-        <div className="quiz-card">
-          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-            <span style={{fontFamily: '"Roboto Mono"', fontSize: 11, textTransform: 'uppercase', letterSpacing: '.2em', color: 'oklch(0.52 .22 255 /.8)'}}>Discover Your Circular Identity</span>
-            <span className="glass" style={{display: 'grid', placeItems: 'center', width: '2rem', height: '2rem', borderRadius: 999, color: 'var(--primary)'}}>?</span>
-          </div>
-          <div style={{margin: '2.5rem 0'}}>
-            <div className="quiz-score">87<span style={{fontSize: '2.5rem'}}>/100</span></div>
-            <div className="glass" style={{display: 'inline-flex', alignItems: 'center', gap: '.5rem', borderRadius: 999, padding: '.5rem 1rem', marginTop: '1rem', fontFamily: '"Roboto Mono"', fontSize: 12, textTransform: 'uppercase', letterSpacing: '.1em', color: 'var(--primary)'}}><span style={{width: 8, height: 8, borderRadius: 999, background: 'var(--lime)', boxShadow: '0 0 12px var(--lime)'}} />Conscious Curator</div>
-            <p className="body" style={{maxWidth: '22rem', marginTop: '1rem'}}>You repair before you replace. You choose quality over quantity. Your wardrobe tells a story.</p>
-          </div>
-          <div style={{display: 'flex', alignItems: 'center', gap: '.75rem'}}>
-            <div style={{width: '2.5rem', height: '2.5rem', borderRadius: 999, background: 'oklch(0.58 .24 256 /.15)'}} />
-            <div style={{width: '2.5rem', height: '2.5rem', borderRadius: 999, background: 'oklch(0.58 .24 256 /.1)'}} />
-            <div style={{width: '2.5rem', height: '2.5rem', borderRadius: 999, background: 'oklch(0.58 .24 256 /.05)'}} />
-            <span style={{marginLeft: '.5rem', fontFamily: '"Roboto Mono"', fontSize: 11, textTransform: 'uppercase', letterSpacing: '.1em', color: 'oklch(0.52 .22 255 /.7)'}}>Share your score</span>
-          </div>
-          <div style={{position: 'absolute', right: '-2.5rem', bottom: '-2.5rem', width: '12rem', height: '12rem', borderRadius: 999, background: 'var(--lime)', opacity: '.3', filter: 'blur(48px)', pointerEvents: 'none'}} />
-        </div>
-        <div style={{display: 'flex', flexDirection: 'column', gap: '1.25rem'}}>
-          <article className="glass-strong" style={{flex: 1, borderRadius: '2rem', padding: '1.75rem'}}>
-            <div style={{display: 'inline-flex', alignItems: 'center', gap: '.5rem', borderRadius: 999, padding: '.25rem .75rem', fontFamily: '"Roboto Mono"', fontSize: 10, textTransform: 'uppercase', letterSpacing: '.2em', color: 'oklch(0.52 .22 255 /.8)', background: 'linear-gradient(135deg,rgba(255,255,255,.9),color-mix(in oklab,var(--cyan-glow) 20%,white))', marginBottom: '.75rem'}}><span style={{width: 6, height: 6, borderRadius: 999, background: 'var(--cyan-glow)'}} />What it is</div>
-            <h3 style={{fontFamily: '"DM Sans"', fontSize: '1.5rem', color: 'var(--primary)'}}>Open to <span className="italic">everyone.</span></h3>
-            <p className="body" style={{marginTop: '.75rem'}}>A 10-question "Discover Your Circular Identity" quiz, open to the public through the <strong>FOR YOU</strong> tab. No sign-up required.</p>
-          </article><article className="glass-strong" style={{flex: 1, borderRadius: '2rem', padding: '1.75rem'}}>
-            <div style={{display: 'inline-flex', alignItems: 'center', gap: '.5rem', borderRadius: 999, padding: '.25rem .75rem', fontFamily: '"Roboto Mono"', fontSize: 10, textTransform: 'uppercase', letterSpacing: '.2em', color: 'oklch(0.52 .22 255 /.8)', background: 'linear-gradient(135deg,rgba(255,255,255,.9),color-mix(in oklab,var(--lilac) 20%,white))', marginBottom: '.75rem'}}><span style={{width: 6, height: 6, borderRadius: 999, background: 'var(--lilac)'}} />What it shows</div>
-            <h3 style={{fontFamily: '"DM Sans"', fontSize: '1.5rem', color: 'var(--primary)'}}>Your fashion <span className="italic">personality.</span></h3>
-            <p className="body" style={{marginTop: '.75rem'}}>Regular people take the quick quiz and instantly get their fashion personality plus a <strong>Personal Handprint Score</strong>.</p>
-          </article><article className="glass-strong" style={{flex: 1, borderRadius: '2rem', padding: '1.75rem'}}>
-            <div style={{display: 'inline-flex', alignItems: 'center', gap: '.5rem', borderRadius: 999, padding: '.25rem .75rem', fontFamily: '"Roboto Mono"', fontSize: 10, textTransform: 'uppercase', letterSpacing: '.2em', color: 'oklch(0.52 .22 255 /.8)', background: 'linear-gradient(135deg,rgba(255,255,255,.9),color-mix(in oklab,var(--lime) 20%,white))', marginBottom: '.75rem'}}><span style={{width: 6, height: 6, borderRadius: 999, background: 'var(--lime)'}} />Why it matters</div>
-            <h3 style={{fontFamily: '"DM Sans"', fontSize: '1.5rem', color: 'var(--primary)'}}>Share to <span className="italic">pressure.</span></h3>
-            <p className="body" style={{marginTop: '.75rem'}}>People love sharing quiz results on social media. When regular people start sharing their "Water Fabric Handprint Scores" online, it forces big fashion brands to join the platform.</p>
-          </article>
-        </div>
-      </div>
-      <div className="glass-strong" style={{marginTop: '2.5rem', borderRadius: '2rem', padding: '2.5rem'}}>
-        <p className="body" style={{maxWidth: '48rem'}}><strong>In short:</strong> Instead of waiting for one factory to finish a private report, your website uses a Global Ticking Clock, a Brand Simulator, and a Public Quiz to show the world that Water Fabric is the ultimate destination for positive environmental action.</p>
-      </div>
-    </div>
-  </section>
+
   {/* JOURNAL (lilac) */}
   <div className="lilac-bg">
     <section className="section">

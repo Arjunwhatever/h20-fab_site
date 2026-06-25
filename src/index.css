@@ -69,7 +69,7 @@ button{font:inherit;cursor:pointer;border:0}
 /* nav — at bottom of hero */
 .nav{position:absolute;inset:auto 0 3.5rem 0;z-index:30;display:flex;justify-content:center;padding:0 1.25rem;transition:all .3s}
 .nav.stuck{position:fixed;inset:1rem 0 auto 0}
-.nav-inner{display:flex;align-items:center;gap:1.5rem;width:100%;max-width:64rem;border-radius:999px;padding:.85rem 2rem}
+.nav-inner{display:flex;align-items:center;gap:1.5rem;width:100%;max-width:64rem;border-radius:999px;padding:.85rem 2rem;background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.65));backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow-glass)}
 .nav ul{flex:1;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 2.25rem;list-style:none;margin:0;padding:0}
 .nav a{font-family:"Roboto Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:oklch(0.52 .22 255 /.85);transition:.2s}
 .nav a:hover{color:var(--primary);font-style:italic}
