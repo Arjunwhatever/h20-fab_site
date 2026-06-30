@@ -84,9 +84,9 @@ export default function Footer() {
           Whether you are a factory in Dhaka, a brand in London, or a consumer who cares.<br />
           <span className="italic" style={{ fontWeight: 'bold', fontSize: '1.05rem', color: 'var(--cyan-glow)', textShadow: '0 0 12px color-mix(in oklab, var(--cyan-glow) 60%, transparent)' }}>Water+Fabric is built for you.</span>
         </p>
-        <button className="btn-glass" style={{ marginTop: '1rem' }}>
+        <a href="https://calendly.com/hello-waternfabric/30min" target="_blank" rel="noreferrer" className="btn-glass" style={{ marginTop: '1rem', textDecoration: 'none', display: 'inline-flex' }}>
           Book A Demo <span>→</span>
-        </button>
+        </a>
       </div>
 
       {/* Footer Bottom Elements */}
@@ -136,7 +136,7 @@ export default function Footer() {
               margin: '0 0 1rem 0'
             }}>Contact</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              <li><a href="#" style={{ color: 'white', textDecoration: 'none', fontFamily: '"DM Sans", sans-serif', fontSize: '0.9rem', opacity: 0.9 }}>Book a demo</a></li>
+              <li><a href="https://calendly.com/hello-waternfabric/30min" target="_blank" rel="noreferrer" style={{ color: 'white', textDecoration: 'none', fontFamily: '"DM Sans", sans-serif', fontSize: '0.9rem', opacity: 0.9 }}>Book a demo</a></li>
             </ul>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function App() {
         <li><a href="#platform">Platform</a></li>
         <li><a href="#about">About</a></li>
       </ul>
-      <button className="btn-primary">Contact +</button>
+      <button className="btn-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contact +</button>
     </nav>
   );
 
@@ -80,7 +80,7 @@ export default function App() {
                 Give every garment a digital identity by connecting factory data, sustainability information, and compliance records in one ESPR-ready Digital Product Passport.
               </p>
               <div className="hero-ctas" style={{ justifyContent: 'center' }}>
-                <span className="cta-flat">Book a Demo →</span>
+                <a href="https://calendly.com/hello-waternfabric/30min" target="_blank" rel="noreferrer" className="btn-glass-blue" style={{ textDecoration: 'none' }}>Book a Call →</a>
               </div>
             </div>
           </div>
